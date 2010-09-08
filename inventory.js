@@ -144,7 +144,7 @@ function showQuickInventory() {
 
     $("#catalog div.product  a.refresh_inventory").live('click', function(e) {
       e.preventDefault();
-      $(this).append("&nbsp; <img src='" + safari.extension.baseURI + "img/loader.gif' />");
+      $(this).append("&nbsp; <img src='" + resourceBaseURI + "img/loader.gif' />");
 
       getInventory($(this).parent());
     });
